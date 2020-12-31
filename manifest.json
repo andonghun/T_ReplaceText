@@ -1,0 +1,32 @@
+{
+  "name": "미디엄글자바꿔버려",
+  "version": "0.1",
+  "description": "이 크롬 익스텐션을 미디엄의 글에 있는 텍스트를 변경합니다.",
+  "manifest_version": 2,
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/replacely16.png",
+      "32": "images/replacely32.png",
+      "48": "images/replacely48.png",
+      "128": "images/replacely128.png"
+    }
+  },
+  "icons": {
+    "16": "images/replacely16.png",
+    "32": "images/replacely32.png",
+    "48": "images/replacely48.png",
+    "128": "images/replacely128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://medium.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": ["declarativeContent"]
+}

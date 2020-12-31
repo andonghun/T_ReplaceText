@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>미디엄 글자를 바꿔보자</h1>
+      <form id="replacely-form">
+        <input
+          type="text"
+          id="search"
+          required
+          class="text-box"
+          placeholder="이걸 찾아서"
+        />
+        <input
+          type="text"
+          id="replace"
+          required
+          class="text-box"
+          placeholder="요걸루"
+        />
+        <button class="btn" type="submit">
+          <span>바꿔!</span>
+        </button>
+      </form>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
